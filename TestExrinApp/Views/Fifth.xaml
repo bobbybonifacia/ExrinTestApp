@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestExrinApp.Views.Fifth">
+	<StackLayout>
+		<Label Text="Fifth page"/>
+		<Button Text="Open First page" Command="{Binding OpenFirstPageCommand}"/>
+		<Button Text="Open Second page" Command="{Binding OpenSecondPageCommand}"/>
+		<Button Text="Open Third page" Command="{Binding OpenThirdPageCommand}"/>
+		<Button Text="Open Fourth page" Command="{Binding OpenFourthPageCommand}"/>
+	</StackLayout>
+</ContentPage>
