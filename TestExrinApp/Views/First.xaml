@@ -2,8 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TestExrinApp.Views.First">
-					<StackLayout>
-						<Label Text="First page"/>
-						<Button Text="Open Second page" Command="{Binding OpenSecondPageCommand}"/>
-					</StackLayout>
+	<ScrollView>
+		<StackLayout>
+			<Label Text="First page"/>
+			<Button Text="Open Second page" Command="{Binding OpenSecondPageCommand}"/>
+			<ActivityIndicator/>
+		</StackLayout>
+	</ScrollView>
 </ContentPage>

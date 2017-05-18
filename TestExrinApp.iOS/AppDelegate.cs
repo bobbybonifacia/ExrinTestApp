@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
+using Exrin.Framework;
 using Foundation;
 using UIKit;
+using Xamarin.Forms;
 
 namespace TestExrinApp.iOS
 {
@@ -22,6 +23,7 @@ namespace TestExrinApp.iOS
 		//
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 		{
+			Exrin.Framework.App.Init(new PlatformOptions());
 			global::Xamarin.Forms.Forms.Init();
 			LoadApplication(new App());
 

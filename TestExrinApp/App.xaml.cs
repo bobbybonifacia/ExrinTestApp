@@ -12,9 +12,10 @@ namespace TestExrinApp
 			Bootstrapper.GetInstance()
 												.Init()
 												.Get<INavigationService>()
-												.Navigate(new StackOptions()
+												.Navigate(new StackOptions
 												{
-													StackChoice = Stack.Main
+													StackChoice = Stack.Main,
+													ViewKey = Main.SecondPage.ToString()
 												});
 		}
 

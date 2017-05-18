@@ -19,11 +19,11 @@ namespace TestExrinApp.ViewModels
 		{
 			get
 			{
-				return (parameter, cancellationToken) =>
+				return async (parameter, cancellationToken) =>
 				{
 					IList<IResult> results = new List<IResult>();
 					results.Add(new NavigationResult(stack, viewKey, parameter, false));
-					return Task.FromResult(results);
+					return results;
 				};
 			}
 		}

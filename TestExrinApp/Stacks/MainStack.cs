@@ -18,7 +18,7 @@ namespace TestExrinApp.Stacks
 		protected override void Map()
 		{
 			NavigationMap<First, FirstViewModel>(nameof(Main.FirstPage));
-			NavigationMap<Second, SecondViewModel>(nameof(Main.SecondPage));
+			NavigationMap<Views.Second, SecondViewModel>(nameof(Main.SecondPage));
 			NavigationMap<Third, ThirdViewModel>(nameof(Main.ThirdPage));
 			NavigationMap<Fourth, FourthViewModel>(nameof(Main.FourthPage));
 			NavigationMap<Fifth, FifthViewModel>(nameof(Main.FifthPage));

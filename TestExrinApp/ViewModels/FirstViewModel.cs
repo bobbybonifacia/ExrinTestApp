@@ -1,5 +1,6 @@
 ﻿using Exrin.Abstraction;
 using Exrin.Framework;
+using TestExrinApp.Interfaces;
 
 namespace TestExrinApp.ViewModels
 {
@@ -13,7 +14,7 @@ namespace TestExrinApp.ViewModels
 			}
 		}
 
-		public FirstViewModel(IExrinContainer exrinContainer) : base(exrinContainer, null)
+		public FirstViewModel(IExrinContainer exrinContainer, IFisrtModel model) : base(exrinContainer, new FirstVisualState(model))
 		{
 		}
 	}
