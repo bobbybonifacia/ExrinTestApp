@@ -52,20 +52,20 @@
       <HintPath>..\packages\Autofac.4.4.0\lib\netstandard1.1\Autofac.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Exrin.Abstraction">
-      <HintPath>..\packages\Exrin.1.2.1\lib\netstandard1.1\Exrin.Abstraction.dll</HintPath>
+    <Reference Include="Exrin.Abstraction, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Exrin.1.2.5\lib\netstandard1.1\Exrin.Abstraction.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Exrin.Common">
-      <HintPath>..\packages\Exrin.1.2.1\lib\netstandard1.1\Exrin.Common.dll</HintPath>
+    <Reference Include="Exrin.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Exrin.1.2.5\lib\netstandard1.1\Exrin.Common.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Exrin.Framework">
-      <HintPath>..\packages\Exrin.1.2.1\lib\netstandard1.1\Exrin.Framework.dll</HintPath>
+    <Reference Include="Exrin.Framework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Exrin.1.2.5\lib\netstandard1.1\Exrin.Framework.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Exrin.Insights">
-      <HintPath>..\packages\Exrin.1.2.1\lib\netstandard1.1\Exrin.Insights.dll</HintPath>
+    <Reference Include="Exrin.Insights, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Exrin.1.2.5\lib\netstandard1.1\Exrin.Insights.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="FormsViewGroup">
@@ -158,6 +158,9 @@
       <Project>{82a02085-050d-49fc-b0db-ebfa25074c8c}</Project>
       <Name>TestExrinApp</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\maxresdefault.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" />
